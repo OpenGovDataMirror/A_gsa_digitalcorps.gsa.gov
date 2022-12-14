@@ -1,0 +1,24 @@
+{% comment %}
+This is used for just about every page. It provides the border around the content.
+{% endcomment %}
+
+<!DOCTYPE html>
+<html lang="en-US">
+{% include meta.html %}
+<body>
+{% comment %}
+Consider moving scripts to end of body if size increases
+make it slower to load; currently uswds is only 82KB.
+It is here because it sometimes impacts banner opening
+on load, then closing when provisioned later.
+{% endcomment %}
+{% include scripts-body.html %}
+
+<!-- content -->
+{% include_cached banner.html %}
+{% include menu.html %}
+{{ content }}
+{% include_cached footer.html %}
+{% include_cached identifier.html %}
+</body>
+</html>

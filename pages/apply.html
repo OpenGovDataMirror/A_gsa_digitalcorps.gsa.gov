@@ -1,0 +1,163 @@
+---
+layout: default
+title: Apply
+permalink: /apply/
+description: "Want to use your tech skills for good? Join the United States Digital Corps!"
+social: apply
+---
+
+<!-- BANNER -->
+<section class="apply-banner">
+  <div class="usa-hero">
+    <div class="grid-container">
+      <div class="usa-hero__callout">
+        <div class="content">
+          <h1 class="usa-hero__heading">Apply</h1>
+          {% if site.apply_now %}
+          <p><strong>Applications are now open!</strong> Links to apply for each track are included below.</p>
+          <p>Applications for all five tracks will close at 11:59pm ET on November 30th. Late applications will not be accepted.</p>
+          <p class="margin-bottom-0">Before applying, we encourage you to visit our <a class="usa-link" href="../process/">Application Process</a> page for eligibility criteria and application tips. Our <a class="usa-link" href="../faq/">FAQs</a> are also a great resource.</p>
+          <p>
+            <strong>Resume tips and application process sessions:</strong>
+            <ul>
+              <li> <a target="_blank" href="https://gsa.zoomgov.com/rec/play/OxFApTDT3RCqxoBrxmwSF8Medt6m-CtpN8lT2hnXUzUeitXi2yv-c3AB55MoEza2qMuFtJBt1rhNSJUf.hHyQS2ZxaCKAGOf3?continueMode=true">Watch a recording</a></li>
+            </ul>
+          </p>
+          {% else %}
+          <p>
+            <strong>Applications for the U.S. Digital Corps are now closed.</strong><br/>
+            We are currently reviewing applications for our 2023 cohort that were received by our November 30, 2022 deadline.
+          </p> 
+          <p class="margin-bottom-0">
+            Applications for our 2024 cohort will open in Summer/Fall 2023. 
+            Subscribe to our newsletter below to stay informed about the Digital Corps and future application opportunities.
+          </p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if site.apply_now %}
+<!-- USA JOBS PROCESS -->
+<section class="usa-section usajobs-process bg-base-lightest">
+  <div class="highlight">
+    <h2>Apply on USAJOBS</h2>
+  </div>
+
+  <div class="usa-step-indicator usa-step-indicator--counters">
+    <ol class="usa-step-indicator__segments">
+      <li class="usa-step-indicator__segment step1">
+        <div class="usa-step-indicator__segment-label">
+          <div class="label">
+            Step One
+          </div>
+          <div class="sublabel">
+            You will need to <a class="usa-links usa-link--external" target="_blank" rel="noopener"
+              href="https://www.usajobs.gov/?c=create-profile">create an account</a> if you do not already have one.
+          </div>
+        </div>
+      </li>
+      <li class="usa-step-indicator__segment step2">
+        <div class="usa-step-indicator__segment-label">
+          <div class="label">
+            Step Two
+          </div>
+          <div class="sublabel">
+            Apply before 11:59pm ET on November 30.
+          </div>
+        </div>
+      </li>
+      <li class="usa-step-indicator__segment step3">
+        <div class="usa-step-indicator__segment-label">
+          <div class="label">
+            Step Three
+          </div>
+          <div class="sublabel">
+            Check your application status on your USAJOBS profile.
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- TRACK SELECTIONS -->
+<section class="usa-section apply-tracks" id="tracks">
+
+  <div class="highlight padding-x-2">
+    <h3>Click the link below for your selected track</h3>
+  </div>
+  
+  {% include tracks/track-bubbles.html %}
+  
+  <!-- Application Process Video -->
+  <!-- <div class="highlight">
+    <p class="text-center margin-top-4">
+      Review the eligibility and application process by checking out this video from our recent info session.
+    </p>
+  </div>
+  <iframe class="video" src="https://www.youtube.com/embed/la6KvheU660" title="U.S. Digital Corps Application Process"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe> -->
+
+  {% if site.apply_now %}
+  <!-- ZOOM Link -->
+  <section class="usa-section apply-now">
+    <div class="grid-container highlight">
+      <div class="padding-y-5 grid-col-10 grid-offset-1 tablet:grid-col-12,grid-offset-0">
+        <h2 class="text-primary-light margin-bottom-0">Watch a recent info session!</h2>
+        <p class="lead text-white margin-y-0 padding-y-1">
+          Did you miss our first info session about our application process and tips for applying? <br/> We encourage you to watch a recording before you apply. 
+        </p>
+        <div class="text-center margin-top-2">
+          <a class="usa-button usa-button--baselighter" target="_blank" href="https://gsa.zoomgov.com/rec/share/SVJKu4UV7U5t0SdozoQNSvCxu9d801FilZSA31eh6RWJcY6Fo8gMRsIwHb6UVSz2.lFd7zmSq1e07VM-D">
+            <span>Application Process Info Session</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- EEO -->
+  <div class="highlight">
+    <div class="margin-top-4 text-center">
+      <p>
+        <a class="usa-link usa-link--external text-bold" target="_blank" rel="noopener"
+          href="https://www.gsa.gov/reference/civil-rights-programs/equal-employment-opportunity">
+          Equal Opportunity Employer</a>
+      </p>
+      <p class="margin-bottom-0">
+        The U.S. Digital Corps is an Equal Opportunity Employer.
+        We’re building cohorts of Fellows that represent our country.
+        We don’t discriminate on the basis of race, color, religion, sex, gender identity or expression,
+        national origin, political affiliation, sexual orientation, marital status, disability,
+        genetic information, age, membership in an employee organization, retaliation, parental status,
+        military service, or other non-merit factors.
+      </p>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- SIGN-UP -->
+<section class="usa-section bg-base-lighter">
+  <div class="grid-container highlight">
+    <div class="grid-col-10 grid-offset-1 tablet:grid-col-12,grid-offset-0">
+      <p class="text-center">
+        Interested in staying in touch with the U.S. Digital Corps?
+        <br class="display-none tablet:display-inline" />
+        Join our mailing list for news, updates, and events.
+      </p>
+      <div class="text-center">
+        <a class="usa-button usa-button--primary"
+          href="https://public.govdelivery.com/accounts/USGSATTS/subscriber/new?topic_id=USGSATTS_108">
+          Subscribe
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
